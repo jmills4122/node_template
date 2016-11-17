@@ -1,0 +1,48 @@
+<%- include('../layout/header', {title: "homepage", user: user}) %>
+<script>
+  var HomepageMusic = document.createElement('AUDIO');
+  HomepageMusic.src = '/homepageMusic.mp3';
+  HomepageMusic.play();
+</script>
+<body>
+
+
+
+<h1>Brief description</h1>
+  <p>
+  Shogi is played on the cells of a 9x9 board (shogi-ban).
+  The 3 first raws form the player's camp and the last 3 rows represent his promotion zone.
+  The cells are slightly rectangular - longer than wider - and small points help to visualize the promotion zones.
+  </p>
+  <p>
+  Each player has 20 men. The pieces are flat and wedge-shaped and are not distinguished by color.
+  Ownership of the pieces is indicated by the direction in which they face, with a player’s pieces always pointing towards the opponent.
+  South (arbitrarily designed as "Black") is named Sente and plays first. North (or "White") is named Gote.
+  </p>
+  <p>
+    The pieces bear their name with two black ideograms.
+    On the reverse side, they also have the name - in red or in black - of their promoted form (except the King and the Gold General who do not promote).
+  </p>
+
+<h1>Rules for winning</h1>
+  <p>
+    When a player's move threatens to capture the opposing king on the next turn, the move is said to give check to the king; the king is said to be in check. If a player's king is in check, that player's responding move must remove the check if possible;[4] if no such move exists, the checking move is also checkmate (tsumi 詰み) and immediately wins the game. The losing player should resign out of courtesy at this point, although in practice this rarely occurs, as players normally resign as soon as a loss is deemed inevitable.
+
+  To announce "check!" in Japanese, one says "ōte!" (王手). This is an influence of international chess[citation needed] and is not required, however, even as a courtesy.[5]
+
+  In professional and serious amateur games, a player who makes an illegal move loses immediately.
+  There are two other possible, if uncommon, ways for a game to end: repetition (千日手 sennichite) and impasse (持将棋 jishōgi):
+</p>
+<p>
+Repetition: If the same game position occurs four times with the same player to move, either player loses if his or her moves during the repetition are all checks (perpetual check), otherwise the game is considered a draw.
+For two positions to be considered the same, the pieces in hand must be the same as well as the positions on the board.
+The rule used to be that it happened if a sequence caused three repetitions.
+</p>
+<p>
+Impasse: The game reaches an impasse if both kings have advanced into their respective promotion zones and neither player can hope to mate the other or to gain any further material.
+ If this happens, the winner is decided as follows: Each rook or bishop, promoted or not, scores 5 points for the owning player, and all other pieces except kings score 1 point each.
+ A player scoring fewer than 24 points loses. (If neither player has fewer than 24, the game is no contest—a draw.) Jishōgi is considered an outcome in its own right rather than no contest, but there is no practical difference.
+ In amateur games other rules for jishōgi can be applied (27 point count or try-rule).
+</p>
+</body>
+<%- include('../layout/footer', {title: "homepage", user: user}) %>

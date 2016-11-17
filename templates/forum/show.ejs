@@ -1,0 +1,26 @@
+<%- include('../layout/header', {title: "Forum Listing for " + item.title, user: user}) %>
+<h1><%= item.title %></h1>
+  <p>
+    <%= item.content %>
+  </p>
+  <h2>Comments</h2>
+  <div id="comment_box">
+  <ul>
+    <% talk.forEach(function(talk) { %>
+      <%- include('/talk/_talk', {talk: talk}) %>
+    <% }); %>
+  </ul>
+  </div>
+  <form action="/talk/<%= item.id%>" method="POST">
+    <P>
+      <textarea class="comment_body"></textarea>
+    </p>
+    <p>
+      <input type="submit" value="Post Comment" />
+    </p>
+  </form>
+
+
+  <a  method = "EDIT" href="/forum/<%= item.id %>/edit">edit Post</a>
+  <a  method = "GET" href="/talk/<%= item.id %>">Go to talk</a>
+<%- include('../layout/footer', {title: "Forum Listing for " + item.title, user: user}) %>

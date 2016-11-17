@@ -1,0 +1,19 @@
+{
+  "name": "equipment",
+  "version": "0.1.0",
+  "description": "An equipment lending service",
+  "main": "app.js",
+  "scripts": {
+    "install": "node ./database/seeds.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathan H. Bean",
+  "license": "MIT",
+  "dependencies": {
+    "client-sessions": "^0.7.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "formidable": "^1.0.17",
+    "sqlite3": "^3.1.1"
+  }
+}

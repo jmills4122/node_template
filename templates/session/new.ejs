@@ -1,0 +1,15 @@
+<%- include('../layout/header', {title: "Login", user: user}) %>
+<h1>Log in</h1>
+<div class="message">
+  <%= message %>
+</div>
+<form action="/login" method="POST">
+  <label for="username">Username:
+    <input name="username" type="text">
+  </label>
+  <label for="password">Password:
+     <input name="password" type="password">
+  </label>
+  <input type="submit" value="Log In">
+</form>
+<%- include('../layout/footer', {title: "homepage", user: user}) %>

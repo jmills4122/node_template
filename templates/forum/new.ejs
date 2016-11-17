@@ -1,0 +1,16 @@
+<%- include('../layout/header', {title: "Add forum to Libary", user: user}) %>
+<h1>Add forum to Lending Library</h1>
+<form action="/forum" method="POST">
+  <p>
+    <label for="title">Title:</label>
+    <input name="title" type="text" />
+  </p>
+  <p>
+    <label for="content">Content</label>
+    <textarea name="content"></textarea>
+  </p>
+  <p>
+    <input type="submit" value="Save" />
+  </p>
+</form>
+<%- include('../layout/footer', {title: "homepage", user: user}) %>
