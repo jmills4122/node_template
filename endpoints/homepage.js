@@ -1,18 +1,16 @@
 "use strict"
 
-var db = require('../db'),
-    formidable = require('formidable');
 
 // A controller for the equipment resource
 // This should have methods for all the RESTful actions
 class homepage {
 
   show(req, res) {
-      res.render('homepage/show', {user: req.user});
+      res.render('homepage/show');
   }
 
   new(req, res) {
-    res.render('homepage/new', {user: req.user});
+    res.render('homepage/new');
   }
 
   redirect(req, res) {
