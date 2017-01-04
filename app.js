@@ -1,3 +1,6 @@
+/**
+ * Template express setup for a generic app.
+ */
 var express = require('express'),
     app = express();
 
@@ -16,6 +19,6 @@ app.get('/homepage/', homepage.show);
 app.get('/', homepage.redirect);
 
 
-app.listen(8080, () => {
+app.listen(8080, function(){
   console.log("Listening on port 8080...");
 });

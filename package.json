@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Nathan H. Bean",
+  "author": "Joseph Mills",
   "license": "MIT",
   "dependencies": {
     "ejs": "^2.4.1",
